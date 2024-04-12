@@ -21,4 +21,21 @@ If things are Good! let's make an alias that would make it our default vim for t
 ```bash
 $ echo 'alias vim=nvim' >> .bashrc
 ```
-To test open a new terminal or simply initiate a new bash session at your current terminal ```bash $ bash``` and call ```bash $ vim``` it should now call NeoVim 
+To test open a new terminal or simply initiate a new bash session at your current terminal ```$ bash``` and call ```$ vim``` it should now call NeoVim 
+
+## Configuring our new NeoVim
+### Installing NERD Fonts
+Nerd Fonts (https://github.com/ryanoasis/nerd-fonts/)
+Nerd Fonts takes popular programming fonts and adds a bunch of Glyphs ... choose one of the fonts you like (https://www.nerdfonts.com/font-downloads) and use ```wget``` to download it and unzip it. Then choose it as your terminal font. In this example we chose the ```SourceCodePro``` font
+
+#### STEP 01:
+```bash
+$ mkdir -p ~/.local/share/fonts
+$ cd ~/.local/share/fonts
+$ wget https://github.com/ryanoasis/nerd-fonts/releases/download/v3.2.0/SourceCodePro.zip
+$ unzip SourceCodePro.zip -d ~/.local/share/fonts/
+$ fc-cache ~/.local/share/fonts
+```
+#### STEP 02:
+From your terminal program settings edit the settings and choose the ```SourceCodePro``` font
+
